@@ -6,14 +6,14 @@ local LocalPlayer = Players.LocalPlayer
 local Camera = workspace.CurrentCamera
 
 -- === НАСТРОЙКИ ===
-local AIMBOT_KEY = Enum.KeyCode.Q      -- Клавиша для включения/выключения аима (БЫЛО T, СТАЛО Q)
-local CLOSE_GUI_KEY = Enum.KeyCode.N    -- Клавиша для закрытия GUI
+local AIMBOT_KEY = Enum.KeyCode.Q      
+local CLOSE_GUI_KEY = Enum.KeyCode.N    
 
 local config = {
     aimbotEnabled = false,
     aimSmoothness = 0.1,
-    fovRadius = 200,
-    -- WallCheck всегда включены и не показываются в меню
+    fovRadius = 70,
+    
     wallCheckAimbot = true,
     teamCheck = true
 }
@@ -181,7 +181,7 @@ local creditText = Instance.new("TextLabel")
 creditText.Size = UDim2.new(1, 0, 0, 20)
 creditText.Position = UDim2.new(0, 0, 1, -20)
 creditText.BackgroundTransparency = 1
-creditText.Text = "ymolishenni"
+creditText.Text = "by panamera XD"
 creditText.TextColor3 = Color3.new(1, 1, 1)
 creditText.TextScaled = true
 creditText.Parent = frame
@@ -273,7 +273,7 @@ RunService.RenderStepped:Connect(function()
     end
 end)
 
-print("✅ Скрипт загружен!")
+
 print("🎯 Q - вкл/выкл аим")
 print("📱 N - открыть/закрыть меню (и FOV круг)")
 print("👤 ymolishenni")
