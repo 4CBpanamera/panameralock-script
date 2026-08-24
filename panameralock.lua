@@ -274,6 +274,4 @@ RunService.RenderStepped:Connect(function()
 end)
 
 
-print("🎯 Q - вкл/выкл аим")
-print("📱 N - открыть/закрыть меню (и FOV круг)")
-print("👤 ymolishenni")
+
