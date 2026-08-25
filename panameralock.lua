@@ -344,13 +344,13 @@ local function onInputBegan(input, gameProcessed)
         config.aimbotEnabled = not config.aimbotEnabled
         aimbotButton.Text = config.aimbotEnabled and "Aimbot: ON (Q)" or "Aimbot: OFF (Q)"
         fovCircle.Color = Color3.fromRGB(148, 0, 211) -- Всегда фиолетовый
-        print("Aimbot toggled to:", config.aimbotEnabled)
+        
     end
     
     if input.KeyCode == CLOSE_GUI_KEY then
         screenGui.Enabled = not screenGui.Enabled
         fovCircle.Visible = screenGui.Enabled
-        print("GUI toggled to:", screenGui.Enabled)
+        
     end
 end
 
